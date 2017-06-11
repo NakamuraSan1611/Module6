@@ -11,13 +11,13 @@ namespace Bankomat
         public static int getID()
         {
             Random rand = new Random();
-            int id = rand.Next(999999);
+            int id = rand.Next(0,999999);
             return id;
         }
         public static int getPass()
         {
-            Random rand = new Random();
-            int pass = rand.Next(9999);
+            Random rand1 = new Random();
+            int pass = rand1.Next(0,9999);
             return pass;
         }
     }
